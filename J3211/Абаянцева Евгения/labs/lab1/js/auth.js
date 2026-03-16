@@ -132,7 +132,6 @@ function handleRegisterForm() {
             btn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Регистрация...';
 
             setTimeout(() => {
-                // Сохраняем данные после регистрации
                 const email = document.getElementById('regEmail').value;
                 const name = document.getElementById('firstName').value + ' ' + 
                              document.getElementById('lastName').value;
