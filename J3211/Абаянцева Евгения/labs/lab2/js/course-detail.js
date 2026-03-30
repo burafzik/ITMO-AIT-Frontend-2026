@@ -1,24 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('=== course-detail.js загружен ===');
-    
     const urlParams = new URLSearchParams(window.location.search);
     const courseId = parseInt(urlParams.get('id'));
     
-    console.log('Course ID из URL:', courseId);
-    console.log('API_BASE_URL:', window.API_BASE_URL || 'http://localhost:3000');
-
     if (!courseId) {
-        console.error('Course ID не указан!');
         showCourseNotFound();
         return;
     }
-
-    console.log('Запрашиваем курс:', courseId);
     
     coursesAPI.getCourseById(courseId).then(course => {
-        console.log('Получен курс:', course);
         if (!course) {
-            console.error('Курс не найден в API');
             showCourseNotFound();
             return;
         }
@@ -27,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         initReviewForm(courseId);
         loadReviews(courseId);
     }).catch(error => {
-        console.error('Ошибка загрузки курса:', error);
         showCourseNotFound();
     });
 });

@@ -297,44 +297,6 @@
   ],
   "enrollments": [],
   "certificates": [],
-  "favorites": [
-    {
-      "userId": 5,
-      "courseId": 3,
-      "addedAt": "2026-03-30T19:40:56.887Z",
-      "id": 1
-    }
-  ],
-  "reviews": [
-    {
-      "userId": 5,
-      "userName": "Евгения Сверская",
-      "courseId": 8,
-      "rating": 4,
-      "comment": "ло",
-      "createdAt": "2026-03-30T19:40:00.180Z",
-      "helpful": 1,
-      "id": 1
-    },
-    {
-      "userId": 5,
-      "userName": "Евгения Сверская",
-      "courseId": 8,
-      "rating": 5,
-      "comment": "лорсплдо",
-      "createdAt": "2026-03-30T19:40:08.620Z",
-      "helpful": 0,
-      "id": 2
-    },
-    {
-      "userId": 5,
-      "userName": "Евгения Сверская",
-      "courseId": 3,
-      "rating": 2,
-      "comment": "5",
-      "createdAt": "2026-03-30T19:40:34.260Z",
-      "helpful": 0,
-      "id": 3
-    }
-  ]
+  "favorites": [],
+  "reviews": []
 }
