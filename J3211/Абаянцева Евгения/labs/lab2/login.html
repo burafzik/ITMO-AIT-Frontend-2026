@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom-red">
         <div class="container">
             <a class="navbar-brand text-danger fw-bold" href="index.html">
-                <i class="bi bi-mortarboard-fill"></i> OnlineLearning
+                <svg class="icon icon-sm"><use href="images/icons.svg#icon-logo"></use></svg> OnlineLearning
             </a>
             <div class="ms-auto">
                 <span class="text-muted">Нет аккаунта?</span>
@@ -51,10 +51,12 @@
                     <div class="mb-3">
                         <label for="password" class="form-label">Пароль</label>
                         <div class="input-group">
-                            <span class="input-group-text bg-light"><i class="bi bi-lock"></i></span>
+                            <span class="input-group-text bg-light">
+								<svg class="icon icon-sm"><use href="images/icons.svg#icon-lock"></use></svg>
+							</span>
                             <input type="password" class="form-control" id="password" placeholder="••••••••" aria-required="true" required>
                             <button class="btn btn-outline-secondary" type="button" id="togglePassword">
-                                <i class="bi bi-eye"></i>
+                                <svg class="icon icon-sm"><use href="images/icons.svg#icon-eye"></use></svg>
                             </button>
                             <div class="invalid-feedback">
                                 Введите пароль.
@@ -71,7 +73,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary w-100 py-2 mb-3">
-                        Войти <i class="bi bi-arrow-right ms-2"></i>
+                        Войти <svg class="icon icon-sm ms-2"><use href="images/icons.svg#icon-arrow-right"></use></svg>
                     </button>
                 </form>
 
@@ -81,10 +83,10 @@
 
                 <div class="d-grid gap-2">
                     <button class="btn btn-google social-login-btn">
-                        <i class="bi bi-google"></i> Google
+                        <svg class="icon icon-sm me-2"><use href="images/icons.svg#icon-google"></use></svg> Google
                     </button>
                     <button class="btn btn-vk social-login-btn">
-                        <i class="bi bi-vk"></i> VK
+                        <svg class="icon icon-sm me-2"><use href="images/icons.svg#icon-vk"></use></svg> VK
                     </button>
                 </div>
             </div>
@@ -99,7 +101,7 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <button id="themeToggle" class="btn btn-outline-secondary btn-sm" aria-label="Переключить тему" title="Переключить тему">
-                        <i class="bi bi-moon-fill me-2" aria-hidden="true"></i>
+                        <svg class="icon icon-sm me-2"><use href="images/icons.svg#icon-moon"></use></svg>
                         <span id="themeText">Тёмная тема</span>
                     </button>
                 </div>

@@ -405,3 +405,27 @@ footer, .mt-auto, body > footer {
 [data-theme="dark"] .tab-content {
     background-color: #1f1f3a !important;
 }
+
+#themeToggle {
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(220, 38, 38, 0.5);
+}
+
+#themeToggle .icon {
+    color: #dc2626 !important;
+}
+
+[data-theme="dark"] #themeToggle {
+    background: rgba(233, 69, 96, 0.2);
+    border-color: rgba(233, 69, 96, 0.5);
+}
+
+[data-theme="dark"] #themeToggle .icon {
+    color: #e94560 !important;
+}
