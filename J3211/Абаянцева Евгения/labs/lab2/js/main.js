@@ -3,12 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
     updateNavigation();
 });
 
-function initPopularCourses() {
+async function initPopularCourses() {
     const container = document.getElementById('popularCourses');
     if (!container) return;
 
-    const popularCourses = coursesData.slice(0, 3);
-    container.innerHTML = popularCourses.map(course => createCourseCard(course)).join('');
+    try {
+        const allCourses = await coursesAPI.getAllCourses();
+        const popular = allCourses.slice(0, 3);
+        
+        container.innerHTML = popular.map(course => createCourseCard(course)).join('');
+    } catch (error) {
+        container.innerHTML = '<p class="text-danger">Не удалось загрузить курсы</p>';
+    }
 }
 
 function createCourseCard(course) {

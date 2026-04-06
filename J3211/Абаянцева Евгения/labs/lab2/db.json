@@ -300,10 +300,21 @@
   "favorites": [
     {
       "userId": 5,
-      "courseId": 1,
-      "addedAt": "2026-04-06T11:47:53.714Z",
+      "courseId": 7,
+      "addedAt": "2026-04-06T15:52:33.525Z",
       "id": 1
     }
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "userId": 5,
+      "userName": "Евгения Сверская",
+      "courseId": 1,
+      "rating": 5,
+      "comment": "ыва",
+      "createdAt": "2026-04-06T14:52:19.921Z",
+      "helpful": 0,
+      "id": 1
+    }
+  ]
 }
