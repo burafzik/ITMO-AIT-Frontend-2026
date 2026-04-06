@@ -9,12 +9,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="auth-page">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-red">
+	<a href="#main-content" class="skip-link">
+        Перейти к основному контенту
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-red"
+	     role="navigation" 
+         aria-label="Основная навигация">
         <div class="container">
-            <a class="navbar-brand text-danger fw-bold" href="index.html">
+            <a class="navbar-brand text-danger fw-bold" href="index.html" aria-label="OnlineLearning - главная страница">
                 <i class="bi bi-mortarboard-fill"></i> OnlineLearning
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" 
+			        data-bs-toggle="collapse" 
+					data-bs-target="#navbarNav"
+			        aria-label="Открыть меню"
+                    aria-expanded="false"
+					aria-controls="navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">

@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<a href="#main-content" class="skip-link">
+        Перейти к основному контенту
+    </a>
+	
     <nav class="navbar navbar-expand-lg navbar-dark bg-custom-red">
         <div class="container">
             <a class="navbar-brand text-danger fw-bold" href="index.html">
@@ -46,8 +50,22 @@
 
                     <div class="mb-3">
                         <label for="regEmail" class="form-label">Email адрес</label>
-                        <input type="email" class="form-control" id="regEmail" placeholder="name@example.com" required>
-                        <div class="invalid-feedback">Введите корректный email.</div>
+                        <input type="email" 
+							   class="form-control" 
+							   id="email" 
+							   name="email"
+							   placeholder="name@example.com"
+							   aria-label="Email адрес"
+							   aria-required="true"
+							   aria-describedby="emailHelp emailError"
+							   autocomplete="email"
+							   required>
+                        <div id="emailHelp" class="form-text">
+							Мы не передаём ваш email третьим лицам
+						</div>
+                        <div class="invalid-feedback" role="alert" aria-live="polite">
+							Введите корректный email.
+						</div>
                     </div>
 
                     <div class="mb-3">
